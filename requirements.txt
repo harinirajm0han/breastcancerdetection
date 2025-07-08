@@ -1,0 +1,43 @@
+Breast Cancer Detection Using Deep Learning and Image Processing
+
+This project focuses on building an efficient and accurate system for breast cancer detection using deep learning and image processing techniques. It leverages pre-trained convolutional neural network (CNN) architectures and Support Vector Machines (SVM) to classify mammogram images and assist in early tumor detection.
+
+Model Architecture & Approach:
+
+  Started with a modified AlexNet architecture.
+  Tested with three optimizers: SGD, RMSProp, and Adam.
+  Found that AlexNet with SGD gave the best initial performance.
+  Fed extracted features into an SVM classifier for enhanced prediction.
+  Evaluated results using a confusion matrix.
+
+Extended Comparison:
+
+    To improve performance and accuracy, additional state-of-the-art CNN models were introduced:
+          ResNet50
+          DenseNet
+          EfficientNetB0
+    All models were trained using SGD for consistency. After comparative analysis, EfficientNetB0 + SVM outperformed the rest in terms of classification accuracy and generalization.
+
+Real-world Testing:
+
+    Implemented a function to take random images from the dataset and predict if a tumor is present.
+    Validated the model using external internet-sourced mammogram images — predictions were accurate and reliable.
+
+Tech Stack:
+    
+    Python, OpenCV, TensorFlow / Keras, Scikit-learn, NumPy, Matplotlib
+
+Results:
+    EfficientNetB0 + SVM achieved the best accuracy (mention your accuracy score here if available).
+    Confusion matrix visualizations demonstrated clear classification boundaries.
+    Model generalized well on unseen images from external sources.
+
+Key Highlights:
+    Combined the power of deep learning (EfficientNetB0) with classic ML (SVM).
+    Focused on real-world application: not just accuracy but also generalization to new, unseen data.
+    Emphasis on optimizing models for practical deployment.
+
+
+Dataset: 
+
+    Source: https://www.kaggle.com/datasets/skooch/ddsm-mammography
